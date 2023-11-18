@@ -4,11 +4,6 @@ import { createMachine } from "xstate";
 export const todosApp = createMachine({
   /** @xstate-layout N4IgpgJg5mDOIC5QDoCWA7ALqghpsAxADYD2OEGUABJiRCbANoAMAuoqAA4OrYnocQAD0QBaAIwAWScikAOSQGYA7AFYANCACeiAGyKAvgc3IwAJzMkzBc5bM06DFuyQhusXqn6CRCcVOQ5VXFVXQAmDW0xANUjE1srAgBRADcwLCpxZ0F3T29XX1Ew8VlJBRVInQQAThKIo2MQdDo4QRyePgEC6Oqw0vK1TSqJZhLmcfHVMOY5XVUgyTiQNCxcfHaPTp8eocRmZFjG0wsrDbyu0F8pXUDg0IjdmrrDk3QwAHcqWEw8MEyzrbdPyKfZBELhSqIEKKZBqBoGIA */
   initial: "loading todos",
-  schema: {
-    events: {} as
-      | { type: "todos loaded"; todos: String[] }
-      | { type: "loading todos failed"; errormeassage: string },
-  },
   states: {
     "loading todos": {
       on: {
