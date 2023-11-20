@@ -31,14 +31,14 @@ function UseState() {
         className="p-3 block bg-slate-800 shadow-md outline-emerald-300"
         onClick={increamentCount}
       >
-        +
+        -
       </button>
       <span>{count}</span>
       <button
         className="p-3 block bg-slate-800 shadow-md outline-emerald-300"
         onClick={decreamentCount}
       >
-        -
+        +
       </button>
     </div>
   );

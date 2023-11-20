@@ -1,1 +1,2 @@
 export { default as UseState} from "./reactHooks/useState"
+export { default as UseEffect } from "./reactHooks/UseEffect";
