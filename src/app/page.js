@@ -3,7 +3,7 @@ import React from "react";
 import { createActor } from "xstate";
 import { feedbackMachine } from "../../xstate/Third";
 import { useMachine } from "@xstate/react";
-import { FiveMachine } from "../component/machine/FiveMachine";
+import Todo from "../component/machine/todo"
 function page() {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   // const [state, send] = useMachine(feedbackMachine);
@@ -16,7 +16,7 @@ function page() {
   feedbackActor.send({ type: "feedback.good" });
   return (
     <div>
-      <FiveMachine />
+  <Todo />
     </div>
   );
 }
