@@ -22,6 +22,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/page.js", "src/component/reactHooks/UseEffect.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/page.js", "src/component/reactHooks/UseEffect.js", "src/component/Modernjs/TutorialOne/TodosMachine.js"],
   "exclude": ["node_modules"]
 }
