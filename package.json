@@ -13,6 +13,7 @@
     "next": "14.0.3",
     "react": "^18",
     "react-dom": "^18",
+    "react-hook-form": "^7.48.2",
     "react-syntax-highlighter": "^15.5.0",
     "uuid-v4": "^0.1.0",
     "xstate": "^5.0.0-beta.44",

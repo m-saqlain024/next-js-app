@@ -1,5 +1,6 @@
 "use client";
 import TutorialOne from "@/component/zod/TutorialOne";
+import TutorialTwo from "@/component/zod/TutorialTwo";
 
 import React from "react";
 function page() {
@@ -13,6 +14,7 @@ function page() {
         ullam minima?
       </h1>
       <TutorialOne />
+      <TutorialTwo/>
     </div>
   );
 }
