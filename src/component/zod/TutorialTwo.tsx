@@ -1,33 +1,17 @@
-import { useForm, SubmitHandler } from "react-hook-form";
+import React from 'react'
 
-type Inputs = {
-  example: string;
-  exampleRequired: string;
-};
-
-export default function TutorialTwo() {
-  const {
-    register,
-    handleSubmit,
-    watch,
-    formState: { errors },
-  } = useForm<Inputs>();
-  const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data);
-
-  console.log(watch("example")); // watch input value by passing the name of it
-
+function TutorialTwo() {
   return (
-    /* "handleSubmit" will validate your inputs before invoking "onSubmit" */
-    <form onSubmit={handleSubmit(onSubmit)}>
-      {/* register your input into the hook by invoking the "register" function */}
-      <input defaultValue="test" {...register("example")} />
-
-      {/* include validation with required or other standard HTML validation rules */}
-      <input {...register("exampleRequired", { required: true })} />
-      {/* errors will return when field validation fails  */}
-      {errors.exampleRequired && <span>This field is required</span>}
-
-      <input type="submit" />
+    <form>
+      <input type="text" placeholder="name" />
+      <input type="text" placeholder="Address" />
+      <input type="text" placeholder="Zip" />
+      <input type="number" placeholder="Roll no" />
+      <input type="email" placeholder="email" />
+      <input type="password" placeholder="password" />
+      <input type="date" placeholder="date" />
     </form>
   );
 }
+
+export default TutorialTwo
